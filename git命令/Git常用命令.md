@@ -172,3 +172,8 @@ git tag -a v0.1 -m "version 0.1 released" 1094adb
 命令git push origin <tagname>可以推送一个本地标签；
 
 命令git tag -d <tagname>可以删除一个本地标签；
+
+
+
+git remote show origin 查看本地分支和追踪情况
+git remote pruned origin  删除本地多余的分支（远程不存在的分支）
