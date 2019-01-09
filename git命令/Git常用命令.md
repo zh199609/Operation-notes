@@ -86,7 +86,7 @@ over
 PS：还没有 push 也就是 repo upload 的时候
 
 git reset commit_id （回退到上一个 提交的节点 代码还是原来你修改的） 
-git reset –hard commit_id （回退到上一个commit节点， 代码也发生了改变，变成上一次的）
+git reset –-hard commit_id （回退到上一个commit节点， 代码也发生了改变，变成上一次的）
 四，已push到远程
 可以使用 git revert
 
@@ -117,7 +117,19 @@ git revert是用一次新的commit来回滚之前的commit，git reset是直接�
 如果在日后现有分支和历史分支需要合并的时候,reset 恢复部分的代码依然会出现在历史分支里.但是revert 方向提交的commit 并不会出现在历史分支里.
 第三:
 reset 是在正常的commit历史中,删除了指定的commit,这时 HEAD 是向后移动了,而 revert 是在正常的commit历史中再commit一次,只不过是反向提交,他的 HEAD 是一直向前的.
+
+git reset -- files 使用当前分支上的修改覆盖暂存区，用来撤销最后一次 git add files
+git checkout -- files 使用暂存区的修改覆盖工作目录，用来撤销本地修改
+git commit -a 直接把所有文件的修改添加到暂存区然后执行提交
+git checkout HEAD -- files 取出最后一次修改，可以用来进行回滚操作
+
 ```
+
+![](F:\Operation-notes\git命令\QQ截图20181220144301.jpg)
+
+
+
+
 
 
 
