@@ -294,19 +294,17 @@ CST:
 
 ​	
 
-
-
-
-
-
-
-
-
 ![](F:\Operation-notes\spring\images\IOC接口图.jpg)
 
+​	容器的初始化，refresh相当于容器的初始化函数，在初始化过程中，比较重要的部分是对BeanDefinition信息的载入和注入工作。由BeanDefinitionReader来完成Bean定义信息的读取、解析和Ioc容器内部BeanDefinition的建立。在客户第一次向Ioc容器请求Bean时，Ioc容器对相关Bean依赖关系进行注入。这时通过getBean来取得Bean，这些Bean不是简单的Java对象，而是已经包含了对象之间依赖关系的Bean。
 
 
 
+### 								
+
+WebApplicationContext     ApplicationContext
+
+![](F:\Operation-notes\spring\images\DispatcherServlet.jpg)
 
 
 
