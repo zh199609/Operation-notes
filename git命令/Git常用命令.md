@@ -11,6 +11,18 @@
 9.git push origin --delete <BranchName>删除远程分支
 10.git branch <branchName>新建分支
 
+11.查看log  git log          git log -n2  查看近2次提交    git log -n2 --oneline 以行的方式显示
+
+
+
+commit    --> tree  --> blob
+
+git cat-file -t xxxxxx(hash值)查看类型
+
+git cat-file -p xxxxxx(hash值)查看内容  最后显示文件内容
+
+
+
 ##### 撤销
 
 ---撤销---
@@ -214,3 +226,21 @@ fixup：将该commit和前一个commit合并，但我不要保留该提交的注
 exec：执行shell命令（缩写:x）
 
 drop：我要丢弃该commit（缩写:d）
+
+
+
+
+
+
+
+修改commit信息：git commit --amend
+
+查看暂存区和Head的区别  git diff --cached
+
+HEAD指向某个commit ,回退到某个comiit(会丢失，慎用): 
+
+```
+git reset --hard <commit Hash>	git reset --hard HEAD
+```
+
+
