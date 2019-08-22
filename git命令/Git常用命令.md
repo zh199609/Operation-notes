@@ -244,3 +244,8 @@ git reset --hard <commit Hash>	git reset --hard HEAD
 ```
 
 
+
+删除本地失效的远程分支
+
+`git remote prune origin`
+
