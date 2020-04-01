@@ -2,6 +2,9 @@
 
 1.创建仓库 `git init` 将项目装简称git仓库
 2.将项目添加到版本库 `git add -A`
+
+git rm --cached 文件名  ** 可以删除刚add进去的文件
+
 3.查看文件状态 `git status`
 4.查看文件的修改 `git diff`
 5.提交修改文件到仓库 `git commit -a -m '提交描述'`
